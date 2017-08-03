@@ -1,0 +1,79 @@
+<!--管理文章 页面-->
+<!--content start-->
+
+<div class="tabsPageHeader  cw01" style="background-color:#fefefe; border-bottom:none;">
+  <div class="tabsPageHeaderContent"> 
+    <!-- right top区域可修改--> 
+
+    <!-- /right top区域可修改--> 
+    
+  </div>
+</div>
+<div class="navtab-panel tabsPageContent">
+<div class="navtabPage unitBox">
+  <div class="bjui-pageContent cw01"> 
+    <!-- right content区域可修改-->
+    
+    <div class="view-box1 container">
+      
+      
+      
+        <form data-toggle="ajaxsearch" data-options="{searchDatagrid:$.CurrentNavtab.find('#datagrid-test-filter')}">
+    <fieldset>
+        <legend style="font-weight:normal;">页头搜索：</legend>
+        <div style="margin:0; padding:1px 5px 5px;">
+            <span>栏目：</span>
+            <input name="obj.code" class="form-control" size="15" type="text">
+            <span>标题：</span>
+            <input name="obj.name" class="form-control" size="15" type="text">
+                
+            <div class="btn-group">
+                 <button class="btn btn-default" type="submit"><i class="fa fa-search fa-lg ww01 cr02" ></i></button>
+                <button type="reset" class="btn btn-default" data-icon="times">重置</button>
+            </div>
+        </div>
+    </fieldset>
+</form>  
+
+<!--以下将 dataUrl: 'http://b-jui.com/demo?callback=?'   改成了
+dataUrl: 'json/news/datagrid.json',
+且添加了local: 'local'
+删除了dataType: 'jsonp'  或 dataType: 'jsonp'改成 dataType: 'json',
+    dataType: 'json',
+        jsonPrefix: 'obj',
+-->
+
+    <table class="table table-hover" id="datagrid-test-filter" data-toggle="datagrid" data-options="{
+        height: '100%',
+        tableWidth:'100%',
+        gridTitle : '管理文章',
+        showToolbar: true,
+        toolbarItem: 'add,edit,del,|,import,export,exportf',
+        dataUrl: 'http://b-jui.com/demo?callback=?',
+        dataType: 'jsonp',
+        jsonPrefix: 'obj',
+        editMode: {dialog:{width:'1000',height:500,title:'编辑文章',mask:true}},
+        editUrl: 'html/datagrid-edit.html?code={code}',
+        paging: {pageSize:10},
+        showCheckboxcol: true,
+        linenumberAll: true,
+        importOption: {type:'dialog', options:{url:'html/datagrid-import.html', width:500, height:300, title:'导入文章信息'}},
+        exportOption: {type:'file', options:{url:'http://b-jui.com/demo/export', loadingmask:true}}
+    }">
+        <thead>
+            <tr>
+              <th data-options="{name:'name',align:'left'}">标题</th>
+              <th data-options="{name:'code',align:'left',width:150}">栏目</th>
+              <th data-options="{name:'fr',align:'center',width:70,type:'boolean',render:function(value){return value ? '√' : '×'}}">审核</th>
+                <th data-options="{name:'see',align:'center',width:50,type:'boolean',render:function(value){return value ? '√' : '×'}}">已发布</th>
+                 <th data-options="{name:'sex',align:'center',width:50,type:'boolean',render:function(value){return value ? '√' : '×'}}">置顶</th> 
+        </thead>
+    </table>
+</div>
+
+    <!-- /right  content区域可修改--> 
+    
+  </div>
+</div>
+
+<!--content end--> 

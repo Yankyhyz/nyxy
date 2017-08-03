@@ -1,0 +1,8 @@
+[
+    {"id":"super","department":null,"level":0,"order":0,"name":"超级管理员","parentid":null},
+    {"id":"k1","department":"001","level":1,"order":0,"name":"111111","parentid":"super"},
+    {"id":"k2","department":"002","level":1,"order":1,"name":"222","parentid":"super"},
+    {"id":"k3","department":"003","level":1,"order":2,"name":"333","parentid":"super"},
+    {"id":"k4","department":"004","level":1,"order":3,"name":"444","parentid":"super"},
+    {"id":"k5","department":"005","level":1,"order":4,"name":"555","parentid":"super"}
+]

@@ -1,0 +1,30 @@
+<!--添加用户-->
+
+<div class="bjui-pageContent cw01 text-center">
+  <div style="width:700px;margin:0 auto" class="view-box2">
+    <form action="json/ajaxDone.json" data-toggle="validate" method="post" data-close-current="true">
+      <input type="hidden" name="user.id" value="${user.id }">
+      <input type="hidden" name="user.username" value="${user.username }" id="ny_userinfo_changepass_username">
+      <input type="hidden" name="user.password" value="" id="ny_userinfo_changepass_userpassword">
+      <input type="hidden" name="user.oldpass" value="" id="ny_userinfo_changepass_userpassword_old">
+      <p class="bg-warning line-h"><span class="glyphicon glyphicon-info-sign" style="color:#03C;margin-right:10px;"></span>用户密码：【初始密码】统一设置成【123456】，增加用户后请用户自行修改</p>
+      <p class="bg-info line-h h4">增加用户</p>
+      <div class="bjui-row col-2 bg-info">
+        <label class="row-label">用户名:</label>
+        <div class="row-input required">
+          <input type="text"  name="newusername" value="" data-rule="required">
+        </div>
+        <br />
+        <label class="row-label">输入密码:</label>
+        <div class="row-input required">
+          <input type="text" name="password" value="123456">
+        </div>
+        <br />
+        <div class="row-input text-center">
+          <button type="button" class="btn-close" data-icon="close">关闭</button>
+          <button type="submit" class="btn-default" data-icon="check">确认</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

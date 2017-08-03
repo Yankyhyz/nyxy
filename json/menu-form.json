@@ -1,0 +1,23 @@
+[
+    {"name":"首页管理", "children":[
+        {"id":"base-user", "name":"登陆名：Admin", "target":"navtab", "url":"html/01.html"},
+        {"id":"base-rigths", "name":"权限：超级管理员", "target":"navtab", "url":"html/01.html"},
+        {"id":"base-pwd", "name":"修改密码", "target":"navtab", "url":"changepassword.html"}
+    ]},
+    {"name":"文章管理", "children":[
+        {"id":"base-addnews", "name":"添加文章", "target":"navtab", "url":"html/10.html"},
+		{"id":"base-magnews","name":"管理文章", "target":"navtab", "url":"html/05.html"}
+    ]},
+	{"name":"用户管理", "children":[
+        {"id":"base-cpwd", "name":"修改用户口令", "target":"navtab", "url":"html/06.html"},
+		{"id":"base-cinfo", "name":"修改用户信息", "target":"navtab", "url":"html/07.html"}
+    ]},
+	{"name":"权限和栏目管理", "children":[
+        {"id":"base-addnav", "name":"添加栏目", "target":"navtab", "url":"html/09.html"},
+		{"id":"base-editnav", "name":"修改栏目", "target":"navtab", "url":"html/04.html"},
+	    {"id":"base-adduser", "name":"添加用户", "target":"navtab", "url":"html/08.html"},
+		{"id":"base-urights", "name":"用户权限管理", "target":"navtab", "url":"html/11.html"},
+		{"id":"base-test", "name":"test", "target":"navtab", "url":"html/12.html"}
+
+    ]}
+]

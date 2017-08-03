@@ -1,0 +1,74 @@
+<!--添加文章-->
+
+<div class="bjui-pageContent cw01 text-center">
+<div style="width:90%;margin:0 auto" class="view-box2 container">
+<p class="bg-info line-h h4">添加文章</p>
+<div class="bg-warning">
+  <form action="json/ajaxDone.json" id="j_custom_form" data-toggle="validate" data-alertmsg="false">
+    <div class="bjui-row col-2 text-left">
+      <label class="row-label">文章名称</label>
+      <div class="row-input required">
+        <input  value="" data-rule="required" type="text">
+      </div>
+      <br />
+      <label class="row-label">栏目名称</label>
+      <div class="row-input required">
+        <select  data-toggle="selectpicker" data-rule="required">
+          <option value="">全部</option>
+          <option value="1">栏目名称1</option>
+          <option value="2">栏目名称2</option>
+        </select>
+      </div>
+      <br />
+      <label class="row-label">内容编辑</label>
+      <div class="row-input">
+        <textarea name="content" id="j_form_content" class="j-content" style="width: 700px;" data-toggle="kindeditor" data-minheight="200">   
+              <p><strong>HTML编辑器KindEditor：</strong></p>
+            </textarea>
+      </div>
+      <br />
+      <br />
+    </div>
+    <p class="bg-info">文章设置</p>
+    <div class="bjui-row col-2 text-left">
+      <label class="row-label"></label>
+      <div class="row-input">
+        <input  data-toggle="icheck" value="true" data-label="是否是轮播新闻" checked="" type="checkbox">
+      </div>
+      <label class="row-label"></label>
+      <div class="row-input">
+        <input  data-toggle="icheck" value="true" data-label="是否是缩略图新闻" type="checkbox">
+      </div>
+      <label class="row-label"></label>
+      <div class="row-input">
+        <input  data-toggle="icheck" value="true" data-label="是否置顶" type="checkbox">
+      </div>
+      <label class="row-label"></label>
+      <div class="row-input">
+        <input  data-toggle="icheck" value="true" data-label="是否显示" type="checkbox">
+      </div>
+      <br/>
+    </div>
+    <p class="bg-info">SEO设置</p>
+    <div class="bjui-row col-2 text-left">
+      <label class="row-label">SEO Title</label>
+      <div class="row-input">
+        <input  value=""  type="text">
+      </div>
+      <label class="row-label">SEO Description</label>
+      <div class="row-input ">
+        <input  value="" type="text">
+      </div>
+      <label class="row-label">SEO Keywords</label>
+      <div class="row-input ">
+        <input value="" type="text">
+      </div>
+    </div>
+     <div class="bg-info line-h">
+      <input type="submit" class="btn btn-default" value="保存" />
+      <input type="submit" class="btn btn-default" value="发布" />
+      <input type="reset" class="btn btn-default" value="重置" />
+      <input type="button" class="btn btn-default" value="取消" />
+    </div>
+  </form>
+</div>

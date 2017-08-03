@@ -1,0 +1,88 @@
+<!-- 修改栏目--> 
+
+<script type="text/javascript">
+// department
+function datagrid_tree_department() {
+    return [{'001':'系部概况'},{'002':'专业介绍'},{'003':'部门通知'},{'004':'教学科研成果'},{'005':'就业与校友'}]
+}
+// 操作列
+function datagrid_tree_operation() {
+    var html = '<button type="button" class="btn btn-default" data-toggle="edit.datagrid.tr"><i class="fa fa-pencil cb04"></i></button>'
+        + '<button type="button" class="btn btn-default" data-toggle="del.datagrid.tr"><i class="fa fa-trash cr03"></i></button>';
+    
+    return html
+}
+//不能拖动一级父节点
+function datagrid_tree_beforeDrag(tr, data) {
+    if (data && data.level == 0) {
+        return false
+    }
+    
+    return true
+}
+// 不能将子节点拖为一级父节点
+function datagrid_tree_beforeDrop(data, targetData, position) {
+    if (targetData && targetData.level == 0 && position !== 'append') {
+        return false
+    }
+    
+    return true
+}
+</script>
+
+<div class="navtab-panel tabsPageContent">
+  <div class="navtabPage unitBox">
+    <div class="bjui-pageContent cw01"> 
+      <!-- right content区域可修改-->
+      <div class="view-box1 container">
+       <table id="j_datagrid_tree" style="text-align:center" data-toggle="datagrid" data-options="{
+        height: '100%',
+        tableWidth:'100%',
+        gridTitle: '修改栏目 ',
+        showToolbar: true,
+        toolbarItem:'add, cancel, del, save',
+        local: 'local',
+        dataUrl: 'json/column/column-datagrid-tree.json',
+        inlineEditMult: false,
+        editUrl: 'json/ajaxDone.json',
+        isTree: 'name',
+        addLocation: 'prev',
+        fieldSortable: false,
+        columnMenu: false,
+        showCheckboxcol: true,
+        paging: {pageSize:10, pageCurrent:1},
+        treeOptions: {
+            expandAll: false,
+            add: true,
+            simpleData: true,
+            keys: {
+                parentKey: 'parentid'
+            }
+        },
+        dropOptions: {
+            drop: true,
+            position: 'before',
+            dropUrl: 'json/ajaxDone.json',
+            beforeDrag: datagrid_tree_beforeDrag,
+            beforeDrop: datagrid_tree_beforeDrop,
+            afterDrop: 'array'
+        }
+    }">
+        <thead>
+          <tr>
+            <th data-options="{align:'center',width:100,render:datagrid_tree_operation}">操作列</th>
+            <th data-options="{name:'department', align:'center',width:150, type:'select', items:datagrid_tree_department}">一级栏目名称</th>
+            <th data-options="{name:'name', align:'left', rule:'required'}">添加二级栏目</th>
+  
+          </tr>
+        </thead>
+      </table>
+      
+      
+      
+       </div>
+      <!-- /right  content区域可修改--> 
+      
+    </div>
+  </div>
+</div>

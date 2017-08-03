@@ -1,0 +1,16 @@
+[
+    {"id":"01","department":"001","level":0,"order":0,"name":"系部概况","parentid":null},
+    {"id":"011","department":"001","level":1,"order":0,"name":"系部概况二级栏目","parentid":"01"},
+    {"id":"012","department":"001","level":1,"order":1,"name":"系部概况二级栏目","parentid":"01"},
+    {"id":"02","department":"002","level":0,"order":1,"name":"专业介绍","parentid":null},
+    {"id":"021","department":"002","level":1,"order":0,"name":"专业介绍二级栏目","parentid":"02"},
+    {"id":"022","department":"002","level":1,"order":1,"name":"专业介绍二级栏目","parentid":"02"},
+    {"id":"023","department":"002","level":1,"order":2,"name":"专业介绍目二级栏目","parentid":"02"},
+    {"id":"03","department":"003","level":0,"order":3,"name":"部门通知","parentid":null},
+    {"id":"031","department":"003","level":1,"order":0,"name":"部门通知二级栏目","parentid":"03"},
+    {"id":"032","department":"003","level":1,"order":1,"name":"部门通知二级栏目","parentid":"03"},
+    {"id":"04","department":"004","level":0,"order":4,"name":"教学科研成果","parentid":null},
+    {"id":"041","department":"004","level":1,"order":0,"name":"教学科研成果二级栏目","parentid":"04"},
+    {"id":"05","department":"005","level":0,"order":5,"name":"就业与校友","parentid":null},
+    {"id":"051","department":"005","level":1,"order":0,"name":"就业与校友二级栏目","parentid":"05"}
+]

@@ -1,0 +1,76 @@
+<!--添加栏目-->
+
+<script type="text/javascript">
+// Suggest JS API 调用
+$('#j_suggest2').suggest({
+    url   : 'json/column/list-#val#.json',
+    keys  : {code:'#code#'},
+    group : 'obj',
+    eventType: 'change'
+})
+</script>
+
+<div class="bjui-pageContent cw01 text-center">
+  <div style="width:700px;margin:0 auto" class="view-box2  container">
+    <p class="bg-info line-h h4">添加栏目</p>
+    <div class="bg-warning">
+      <div class="bjui-row col-2 text-left">
+      <label class="row-label">栏目名称</label>
+      <div class="row-input">
+        <input type="text" name="obj.suggest" value="" data-toggle="suggest" data-options="{
+                    url:'json/column/list-#val#.json',
+                    keys  : {code:'#code#'},
+                    group : 'obj',
+                    eventType: 'change'
+                }" placeholder=" ">
+      </div>
+      <label class="row-label">是否是菜单栏</label>
+      <div class="row-input">
+        <select name="suggest2" id="j_suggest2" data-toggle="selectpicker" data-width="200">
+          <option value=""></option>
+          <option value="a">是</option>
+          <option value="b">否</option>
+        </select>
+      </div>
+      <label class="row-label">父级菜单</label>
+      <div class="row-input">
+        <input type="text" name="obj.code" value="" placeholder="不是菜单栏无需填">
+      </div>
+      <label class="row-label">部门名称</label>
+      <div class="row-input">
+        <select  data-toggle="selectpicker" data-width="200">
+          <option value="">部门名称</option>
+          <option value="1">下拉选项1</option>
+          <option value="2" selected="">下拉选项2</option>
+          <option value="3">下拉选项3</option>
+          <option value="4">下拉选项4</option>
+        </select>
+      </div>
+      <br>
+      <label class="row-label">栏目图片</label>
+      <div class="row-input">
+        <input data-name="custom.pic" data-toggle="webuploader" data-options="
+                {
+                    pick: {label: '点击选择图片'},
+                    server: 'json/ajaxUpload.json',
+                    fileNumLimit: 1,
+                    formData: {dir:'custompic'},
+                    required: true,
+                    uploaded: '',
+                    basePath: '',
+                    accept: {
+                        title: '图片',
+                        extensions: 'jpg,png',
+                        mimeTypes: '.jpg,.png'
+                    }
+                }" type="file">
+      </div>
+    </div>
+    </div>
+    <div class="bg-info line-h">
+      <input type="submit" class="btn btn-default" value="确定" />
+      <input type="reset" class="btn btn-default" value="重置" />
+      <input type="button" class="btn btn-default" value="取消" />
+    </div>
+  </div>
+</div>

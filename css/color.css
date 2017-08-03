@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+.cb01{background:#2A94DE;}
+.cr01{background:#ff5454;}
+.ck01{background:#2a2730;}
+.cw01{background:#f2f2f2;}
+.cw02{background:#fff;}
+.no{display:none;}
+
+.form-control,.btn,input{height:30px;}
+
+/**/
+*{margin:0;padding:0;font:Arial, Helvetica, sans-serif,'微软雅黑';}
+/*body {min-height: 100%;background:#2a2730;}*/
+li {list-style: none;}
+input, select, textarea {outline: none;border: none;background: none;}
+textarea {resize: none;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+.clearfix:after, 
+.clearfix:before {	content: "";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+.fl{float:left;}
+.fr{float:right;}
+
+
+
+/*header*/
+#bjui-navbar {margin-bottom: 1px; height: 60px;min-height: 60px;border: none;border-radius: 0;height:50px;background:#2A94DE;}
+.logo-text{font:"微软雅黑";font-weight:bold;float:right;font-size:24px;color:#fff;height:50px;line-height:50px;background:#2A94DE;}
+
+
+/*headbar*/
+.view-headbar{width: 100%; height: 30px;background: #fff;overflow:hidden;}
+/*用户位置*/
+.operation_user {font: "微软雅黑";height:30px;line-height:30px;padding: 0 10px;background-color: #fff;}
+.link span {font-family: "宋体";font-weight: 500;padding: 0 10px;}
+.link a {color: #000;}
+.link a:hover {background:#f2f2f2;}
+.icon {padding-left: 18px;background-position: left center;background-repeat: no-repeat;}
+.icon_i {background-image: url(../images/i.png)}
+.icon_j {background-image: url(../images/j.png);}
+.icon_t {background-image: url(../images/t.png);}
+.icon_n {background-image: url(../images/n.png);}
+.icon_e {background-image: url(../images/e.png);}
+/*view-headbar 的样式*/
+
+/*left  
+#bjui-sidenav-box{background:#333;}
+#bjui-navtab > .tabsPageContent{margin:0;}*/
+#bjui-sidenav{background-color:#ccc;}
+#bjui-sidenav-box .nav {height:300px; background:#fff;}
+ul.nav li.opne{background:#fff;color:#fff;height:50px;}
+#bjui-sidenav-box .nav > li > a.right-arrow{background-color:#000;color:#fff;height:50px;line-height:50px;}
+#bjui-sidenav-box .nav > li > a.right-arrow:hover{background-color:#ff5454;}
+#bjui-sidenav-box > .nav > li .nav > li {height:36px;}
+#bjui-sidenav-box > .nav > li .nav > li > a >i{margin-right:20px;}
+.navtab-tab , .nav , .nav-tabs ul li{heigth:30px;background:f2f2f2;}
+
+
+/* 垂直导航*/
+.sv3 dl, .sv3 dt, .sv3 dd {	padding: 0;	margin: 0;}
+.sv3 {	width: 100%;	/*border: 1px solid #BFC7D9;*/}
+.sv3 dl {width: 100%;height: 360px;background: #fff;overflow: hidden;}
+.sv3 dt {text-align: center;height: 50px;font-size: 13px;color: #fff;background: #000;border-top: 1px solid #fff;border-bottom: 1px solid #BFC7D9;}
+.sv3 dt span {display: inline-block;height: 50px;margin: 18px auto;}
+.sv3 dl.on dt {	background: #000;color: #FFF;font-weight: bold;}
+.sv3 dl.on dt:hover {background: #ff5454;}
+.sv3 dd {padding: 10px;color: #333;font-size: 12px;line-height: 1.5em;}
+.sv3 dd:hover {background: #f5f5f5;}
+.sv3 dd span {margin-right: 30px;width: 20px;height: 20px;line-height: 20px;}
+.sv3 dd a:link, .sv3 dd a:visited, .sv3 dd a:hover, .sv3 dd a:active {color: #333;display: block;text-align: left;text-decoration: none;}
+/* 垂直导航*/
+/*right*/
+#bjui-navtab{position:relative; margin-left:260px; height:100%;}
+.view-box {background:#fff;margin-top:20px;padding:5px;}
+.view-box1{background:#f2f2f2;margin-top:20px;margin-bottom:20px;padding:10px;}
+.view-box2{background:#fff;padding:10px;}
+
+
+/*添加新闻*/
+.text-bg {border-bottom: 2px solid #cce2c1;margin: 10px 0;padding: 5px 10px;}
+.text-bg1 {background: #e5e5e5;margin: 0;}
+/*添加新闻*/
+
+
+/*管理新闻*/
+.w05 {width: 5%;}
+.w10 {width: 10%;}
+.w20 {width: 20%;}
+.w30 {width: 30%;}
+/*红色 #e27360*/
+.cr02 {color: #e27360;}
+.cr03{color:#e1725f;}
+/*蓝色 #63a0d2*/
+.cb04 {color: #63a0d2;}
+.gbcb01{background:#51B6E8;}
+.gbcg01{background:#cce2c1;}
+.ck01{ color:#000;}
+.ck02{color: #9D9D9D;}
+
+.ww01{ width:100px;}
+.navh{ height:94px;line-height:94px;}
+/*重置样式*/
+.form-group {margin-bottom: 0}
+.checkbox, .radio {position: relative;display: block;margin-top: 1px;margin-bottom: 1px}
+.table {background: #fff;}
+.table-striped>tbody>tr:nth-of-type(odd) {background-color: #fff}
+.table-hover>tbody>tr:hover {background-color: #D9EDF7}
+
+/*管理新闻table*/
+
+/*添加用户信息*/
+.table tr, .usertable td{heigth:100px;}
+
+/*添加用户信息*/
+.line-h{height:50px;line-height:50px;}
+
+/*table toolbar 样式重置
+.btn-close, .btn-red{color:#000; background:#FFFFFF; border-color:#000;}
+.btn-close:active, .btn-red:active,
+.btn-close.active, .btn-red.active,
+.btn-close:hover, .btn-red:hover,
+.btn-close:focus, .btn-red:focus{color:#000; background-color:#ccc;}
+.btn-green{color:#000; background:#000; border-color:green;}
+.btn-green:active,
+.btn-green.active,
+.btn-green:hover,
+.btn-green:focus{color:#FFF; background-color:green;}*/

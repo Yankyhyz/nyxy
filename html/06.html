@@ -1,0 +1,36 @@
+<!--修改用户密码-->
+
+<div class="bjui-pageContent cw01 text-center">
+
+<div style="width:700px;margin:0 auto" class="view-box2">
+    <form action="json/ajaxDone.json" data-toggle="validate" method="post" data-close-current="true">
+        <input type="hidden" name="user.id" value="${user.id }">
+        <input type="hidden" name="user.username" value="${user.username }" id="ny_userinfo_changepass_username">
+        <input type="hidden" name="user.password" value="" id="ny_userinfo_changepass_userpassword">
+        <input type="hidden" name="user.oldpass" value="" id="ny_userinfo_changepass_userpassword_old">
+        <p class="bg-danger line-h"><span class="glyphicon glyphicon-warning-sign" style="color:#933;margin-right:10px;"></span>注意：【新密码】强烈建议使用【6】位长度以上的密码</p>
+    <p class="bg-info line-h h4">修改用户密码</p>
+        <div class="bjui-row col-2 bg-info">
+            <label class="row-label">旧密码:</label>
+            <div class="row-input required">
+                <input type="password" id="ny_userinfo_changepass_oldpass" name="oldpassword" value="" data-rule="required">
+            </div>
+            <br />
+            <label class="row-label">新密码:</label>
+            <div class="row-input required">
+                <input type="password" id="ny_userinfo_changepass_newpass" name="password" value="" data-rule="新密码:required;length(6~)">
+            </div>
+            <br />
+            <label class="row-label">确认密码:</label>
+            <div class="row-input required">
+                <input type="password" id="ny_userinfo_changepass_confirmpass" name="" value="" data-rule="required;match(#ny_userinfo_changepass_newpass)">
+            </div>
+            <br />
+            <div class="row-input text-center">
+               <button type="button" class="btn-close" data-icon="close">关闭</button>
+               <button type="submit" class="btn-default" data-icon="check">确认修改</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
